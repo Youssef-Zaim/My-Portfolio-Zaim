@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@keyframes float-1 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(15vw, 15vh); }
+  66% { transform: translate(-10vw, 20vh); }
+}
+
+@keyframes float-2 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(-20vw, -15vh); }
+  66% { transform: translate(10vw, -25vh); }
+}
+
+@keyframes float-3 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(20vw, -20vh); }
+  66% { transform: translate(-15vw, 10vh); }
+}
+
+.animate-float-1 { animation: float-1 20s ease-in-out infinite; }
+.animate-float-2 { animation: float-2 25s ease-in-out infinite; }
+.animate-float-3 { animation: float-3 22s ease-in-out infinite; }
+
+@keyframes floatSlow {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(40px, -30px); }
+}
+
+@keyframes floatSlower {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-30px, 40px); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 12s ease-in-out infinite;
+}
+
+.animate-float-slower {
+  animation: floatSlower 18s ease-in-out infinite;
+}
